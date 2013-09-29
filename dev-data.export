@@ -1,0 +1,1312 @@
+array(
+  (object) array(
+      'vid' => '2',
+      'uid' => '1',
+      'title' => 'Upstate New York',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '93f8ead6-0df3-40db-bebf-842bc1b3fce8',
+      'nid' => '2',
+      'type' => 'restaurant_branch',
+      'language' => 'und',
+      'created' => '1376415718',
+      'changed' => '1376422585',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'bdf1a0ce-d027-4763-8196-f3c3c4854b44',
+      'revision_timestamp' => '1376422585',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "K & B Restaurants' oldest location, Upstate New York is nestled deep in the Adirondack Mountains. Come enjoy a nice meal seated next to a quiet mountain lake, and sip some tea while enjoying the wildlife.",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>K &amp; B Restaurants' oldest location, Upstate New York is nestled deep in the Adirondack Mountains. Come enjoy a nice meal seated next to a quiet mountain lake, and sip some tea while enjoying the wildlife.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_hours' => array(
+        'und' => array(
+          array(
+            'value' => '7 days a week, 11am to 10pm',
+            'format' => NULL,
+            'safe_value' => '7 days a week, 11am to 10pm',
+          ),
+        ),
+      ),
+      'field_menu' => array(
+        'und' => array(
+          array(
+            'target_id' => '4',
+          ),
+        ),
+      ),
+      'field_owner' => array(),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376415718',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '4',
+      'uid' => '1',
+      'title' => 'Main Menu',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '6489093b-b2f8-4955-b6bb-d6e72ce8f58c',
+      'nid' => '4',
+      'type' => 'menu',
+      'language' => 'und',
+      'created' => '1376420967',
+      'changed' => '1376422562',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '8d25a438-4eaa-4108-b1ec-897448139058',
+      'revision_timestamp' => '1376422562',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Enjoy K & B Restaurant's famous food from our simple made-for-you menu!",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Enjoy K &amp; B Restaurant's famous food from our simple made-for-you menu!</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_appetizers' => array(),
+      'field_deserts' => array(
+        'und' => array(
+          array(
+            'target_id' => '10',
+          ),
+        ),
+      ),
+      'field_drinks' => array(
+        'und' => array(
+          array(
+            'target_id' => '11',
+          ),
+          array(
+            'target_id' => '12',
+          ),
+          array(
+            'target_id' => '13',
+          ),
+        ),
+      ),
+      'field_entrees' => array(
+        'und' => array(
+          array(
+            'target_id' => '8',
+          ),
+          array(
+            'target_id' => '9',
+          ),
+        ),
+      ),
+      'field_salads' => array(
+        'und' => array(
+          array(
+            'target_id' => '5',
+          ),
+          array(
+            'target_id' => '6',
+          ),
+          array(
+            'target_id' => '7',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376420967',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '13',
+      'uid' => '1',
+      'title' => 'Chocolate milk',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '1b80467d-fa98-4f68-8a22-a8df7ab1e260',
+      'nid' => '13',
+      'type' => 'menu_item',
+      'language' => 'und',
+      'created' => '1376422545',
+      'changed' => '1376422545',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '31efd841-050f-4065-9c42-8c3b066c166d',
+      'revision_timestamp' => '1376422545',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'The old stand-by.',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>The old stand-by.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_picture' => array(),
+      'field_price' => array(
+        'und' => array(
+          array(
+            'value' => '1.49',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376422545',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '12',
+      'uid' => '1',
+      'title' => 'Raspberry Lemonade',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '600d26bd-f273-4d39-98b1-daf3ad8f57b7',
+      'nid' => '12',
+      'type' => 'menu_item',
+      'language' => 'und',
+      'created' => '1376422516',
+      'changed' => '1376422516',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '040c4228-c888-44b6-8e8f-c04c50b30c2d',
+      'revision_timestamp' => '1376422516',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'Good old-fashioned lemonade, made right here in our kitchen, with some fresh raspberry fleks tossed in. Perfect on a hot summer day!',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Good old-fashioned lemonade, made right here in our kitchen, with some fresh raspberry fleks tossed in. Perfect on a hot summer day!</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_picture' => array(),
+      'field_price' => array(
+        'und' => array(
+          array(
+            'value' => '2.79',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376422516',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '11',
+      'uid' => '1',
+      'title' => 'Pepsi, Mountain Dew, Sierra Mist, Root Beer',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '5e3d18de-fa08-4b7b-9278-d94e6616d7bc',
+      'nid' => '11',
+      'type' => 'menu_item',
+      'language' => 'und',
+      'created' => '1376422449',
+      'changed' => '1376422449',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '1da5d263-bb47-4b24-897e-66a6ce4bcfb6',
+      'revision_timestamp' => '1376422449',
+      'revision_uid' => '1',
+      'body' => array(),
+      'field_picture' => array(),
+      'field_price' => array(
+        'und' => array(
+          array(
+            'value' => '1.99',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376422449',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '10',
+      'uid' => '1',
+      'title' => 'Three-layer chocolate lava cake',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '4a66355b-d0bb-46e5-9b02-34027691594f',
+      'nid' => '10',
+      'type' => 'menu_item',
+      'language' => 'und',
+      'created' => '1376422376',
+      'changed' => '1376422376',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '2fcd305d-bd78-451f-8596-8bcf026e4d62',
+      'revision_timestamp' => '1376422376',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'Three layers of moist chocolate, three layers of creamy frosting, with a pocket of hot fudge in the middle. Ask for it with a scoop of vanilla ice cream!',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Three layers of moist chocolate, three layers of creamy frosting, with a pocket of hot fudge in the middle. Ask for it with a scoop of vanilla ice cream!</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_picture' => array(),
+      'field_price' => array(
+        'und' => array(
+          array(
+            'value' => '4.99',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376422376',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '9',
+      'uid' => '1',
+      'title' => 'Cedar plank salmon',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '57a8d5e9-a9c2-49e6-a610-0deed761ab82',
+      'nid' => '9',
+      'type' => 'menu_item',
+      'language' => 'und',
+      'created' => '1376422216',
+      'changed' => '1376422216',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'b6ad8c54-90ec-4bc5-9465-0dcec7ba3ffe',
+      'revision_timestamp' => '1376422216',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'Slow grilled on a wet cedar plank, this tender flank of salmon is smoked with just the right amount of cedar flavoring. Comes with a side of rice and a small pile of asparagus. ',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Slow grilled on a wet cedar plank, this tender flank of salmon is smoked with just the right amount of cedar flavoring. Comes with a side of rice and a small pile of asparagus.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_picture' => array(),
+      'field_price' => array(
+        'und' => array(
+          array(
+            'value' => '18.99',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376422216',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '8',
+      'uid' => '1',
+      'title' => '12 oz. Bone-in Ribeye',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '446f5e1f-2cbf-4f37-9699-3a29e70a0dab',
+      'nid' => '8',
+      'type' => 'menu_item',
+      'language' => 'und',
+      'created' => '1376422056',
+      'changed' => '1376422056',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '98dac566-fb6e-45bb-ae1d-d386e793590c',
+      'revision_timestamp' => '1376422056',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'Juicy and think, this grade A piece of meat comes attached to the bone, guaranteeing you the juiciest cut of steak anyone can offer.',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Juicy and think, this grade A piece of meat comes attached to the bone, guaranteeing you the juiciest cut of steak anyone can offer.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_picture' => array(),
+      'field_price' => array(
+        'und' => array(
+          array(
+            'value' => '17.99',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376422056',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '7',
+      'uid' => '1',
+      'title' => 'Strawberry Poppy seed Salad',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => 'b01dff3e-e20b-4938-bf65-a8c88d904f20',
+      'nid' => '7',
+      'type' => 'menu_item',
+      'language' => 'und',
+      'created' => '1376421785',
+      'changed' => '1376421785',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '11ea8935-c62d-4eb9-b2f0-8dcddd88680a',
+      'revision_timestamp' => '1376421785',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'Mixed greens, blueberries, strawberries, candied pecans, and a delicious poppy seed vinaigrette.',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Mixed greens, blueberries, strawberries, candied pecans, and a delicious poppy seed vinaigrette.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_picture' => array(),
+      'field_price' => array(
+        'und' => array(
+          array(
+            'value' => '11.99',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376421785',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '6',
+      'uid' => '1',
+      'title' => 'Caeser Salad',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '0ce077cc-57fa-4f2c-b267-cfbb4547a973',
+      'nid' => '6',
+      'type' => 'menu_item',
+      'language' => 'und',
+      'created' => '1376421633',
+      'changed' => '1376421633',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'eccb6eac-28e5-43dc-ba7a-7c0a00c90835',
+      'revision_timestamp' => '1376421633',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'Romaine lettuce, parmesan cheese, some croutons, and an excellent homemade caeser dressing.',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Romaine lettuce, parmesan cheese, some croutons, and an excellent homemade caeser dressing.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_picture' => array(),
+      'field_price' => array(
+        'und' => array(
+          array(
+            'value' => '7.79',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376421633',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '5',
+      'uid' => '1',
+      'title' => 'Chef Salad',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => 'c62c14ba-864d-40a6-b687-60120b79a234',
+      'nid' => '5',
+      'type' => 'menu_item',
+      'language' => 'und',
+      'created' => '1376421053',
+      'changed' => '1376421053',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '54554c86-246b-4109-a717-2e178baca9f4',
+      'revision_timestamp' => '1376421053',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'Lots of lettuce, a bit of ham and turkey, some tomatos, and our special house dressing. ',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Lots of lettuce, a bit of ham and turkey, some tomatos, and our special house dressing.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_picture' => array(),
+      'field_price' => array(
+        'und' => array(
+          array(
+            'value' => '8.99',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376421053',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '1',
+      'uid' => '1',
+      'title' => 'Downtown Seattle',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '9db8498d-f0db-4efa-a82f-9bcd0c117f13',
+      'nid' => '1',
+      'type' => 'restaurant_branch',
+      'language' => 'und',
+      'created' => '1376415579',
+      'changed' => '1376415579',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'e3dcf4d2-3d04-4495-a4d2-daa8f53c6316',
+      'revision_timestamp' => '1376415579',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Welcome to K & B Restaurants' exciting new downtown Seattle location!",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Welcome to K &amp; B Restaurants' exciting new downtown Seattle location!</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_hours' => array(
+        'und' => array(
+          array(
+            'value' => 'M-F 8am - 10pm',
+            'format' => NULL,
+            'safe_value' => 'M-F 8am - 10pm',
+          ),
+        ),
+      ),
+      'field_menu' => array(),
+      'field_owner' => array(),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1376415579',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)

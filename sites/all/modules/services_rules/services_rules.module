@@ -1,0 +1,117 @@
+<?php
+
+/**
+ * Implementation of hook_permission(). 
+ */
+function services_rules_permission() {
+  $perms = array();
+  foreach(services_rules_get_rules() as $id => $rule) {
+    $perms["access services_rules $id"] = array(
+      'title' => t('Access rule @rule', array('@rule' => $rule->label)),
+    );
+  }
+  return $perms;
+}
+
+/**
+ * Implementation of hook_services_resources().
+ */
+function services_rules_services_resources() {
+  $resources = array();
+
+  foreach (services_rules_get_rules() as $id => $rule) {
+    $variables = array();
+    $args = array();
+    foreach ($rule->componentVariables() as $machine_name => $data) {
+      // The function componentVariables() returns both "parameter" and
+      // "provided" variables.  Variables, however, can be one, the other, or
+      // both.  Filter the list so that variables that are only the "provided"
+      // type will be left out.
+      if (!isset($data['parameter']) || (isset($data['parameter']) && $data['parameter'] !== FALSE)) {
+        $variables[] = "[{$machine_name}] = {$data['label']}";
+        $args[] = array(
+          'name' => $machine_name,
+          'type' => 'string',
+          'description' => $data['label'],
+          'source' => array('data' => $machine_name),
+          'optional' => FALSE,
+        );
+      }
+    }
+    $description = !empty($variables) ?  t('@label - The following values are accepted: <i>@values</i>', array('@label' => $rule->label, '@values' => implode(', ', $variables))) : check_plain($rule->label);
+    $resources['rules']['actions'][$id] = array(
+      'rule' => $id,
+      'help' => $description,
+      'callback' => 'services_rules_component_callback',
+      'access callback' => 'user_access',
+      'access arguments' => array("access services_rules $id"),
+      'args' => $args,
+    );
+  }
+
+  return $resources;
+}
+
+/**
+ * Implements hook_services_request_preprocess_alter().
+ *
+ * Package all the variables so that they can be accessed by the callback.
+ */
+function services_rules_services_request_preprocess_alter($controller, &$args) {
+  if (isset($controller['rule'])) {
+    $rule = array(
+      'name' => $controller['rule'],
+      'args' => array(),
+    );
+    if (!empty($controller['args'])) {
+      foreach ($controller['args'] as $delta => $arg) {
+        if (isset($args[$delta])) {
+          $rule['args'][$arg['name']] = $args[$delta];
+        }
+      }
+    }
+    array_unshift($args, $rule);
+  }
+}
+
+/**
+ * Callback function to handle the execution of rules.
+ */
+function services_rules_component_callback($component_info) {
+  $args = isset($component_info['args']) ? $component_info['args'] : array();
+  array_unshift($args, $component_info['name']);
+  $result = call_user_func_array('rules_invoke_component', $args);
+
+  // Component could not be found.
+  if ($result === FALSE) {
+    return FALSE;
+  }
+
+  // The $result array is not keyed associatively, so the data must be re-keyed
+  // according to the "provided" variables of the component.
+  $component = rules_get_cache('comp_' . $component_info['name']);
+  $i = 0;
+  foreach($component->providesVariables() as $name => $val) {
+    $result[$name] = $result[$i];
+    unset($result[$i]);
+    $i++;
+  }
+
+  return $result;
+}
+
+/**
+ * Return a list of all rules components of type "Rule".
+ */
+function services_rules_get_rules() {
+  static $rules = NULL;
+  if (is_null($rules)) {
+    $rules = array();
+    foreach (rules_get_components() as $id => $rule) {
+      if (get_class($rule) == 'Rule') {
+        $rules[$id] = $rule;
+      }
+    }
+  }
+  return $rules;
+}

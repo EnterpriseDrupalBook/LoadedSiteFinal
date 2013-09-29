@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#read -r -p "Create/recreate the database for this Drupal instance? [Y/n]: " OK
+#if [ "$OK" ] && ["OK" != "y" ] && [ "$OK" != "Y"]; then exit; done
+
+read -rs -p "Enter password for MySql root account: " mysql_root_password ; echo
+read -rs -p "Enter the password for the site admin account: " account_password ; echo
+
+php -d sendmail_path=`which true` `which drush` si standard --db-url="mysql://kbr:kbrpass123@localhost:3306/kbr" --db-su=root --db-su-pw="$mysql_root_password" --site-name="K&B Restaurants" --clean-url=0 --account-name=admin --account-pass="$account_password" -y
+
+
+drush en k_b_content_types
+
+drush en services rest_server services_views -y
+

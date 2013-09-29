@@ -1,0 +1,11 @@
+name = Services Rules
+description = A bridge module that provides Services integration for Rules Components.
+core = 7.x
+dependencies[] = services
+dependencies[] = rules
+; Information added by drupal.org packaging script on 2013-05-25
+version = "7.x-1.0-beta1+0-dev"
+core = "7.x"
+project = "services_rules"
+datestamp = "1369453174"
+
