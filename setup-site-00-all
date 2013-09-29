@@ -1,0 +1,7 @@
+#!/bin/bash
+
+./setup-site-01-database
+./setup-site-02-modules
+./setup-site-03-kbmodules
+./setup-site-04-content
+./setup-site-05-security
