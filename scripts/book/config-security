@@ -1,0 +1,11 @@
+drush dl captcha -y
+drush en captcha image_captcha -y
+
+drush vset captcha_default_validation "1" -y
+drush vset captcha_default_challenge "image_captcha/Image" -y
+drush vset image_captcha_code_length "7" -y
+drush vset image_captcha_file_format "1" -y
+drush vset image_captcha_line_noise "1" -y 
+drush vset image_captcha_noise_level "3" -y
+
+
