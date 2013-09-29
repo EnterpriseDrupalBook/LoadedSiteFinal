@@ -7,3 +7,4 @@ drush en feeds feeds_ui feeds_import -y
 drush en entityreference field_validation field_validation_ui -y
 drush en node_export node_export_feeds -y
 drush en exclude_node_title -y
+drush en services_rules -y

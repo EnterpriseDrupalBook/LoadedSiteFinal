@@ -1,6 +1,6 @@
 #!/bin/bash
 
 drush en k_b_content_types -y
+drush en k_b_rules_and_services -y
 drush en k_b_rolespermissions -y
-drush en k_b_rules -y
 

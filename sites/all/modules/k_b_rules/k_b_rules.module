@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the K&B Rules feature.
- */
-
-include_once 'k_b_rules.features.inc';
