@@ -1,1 +1,0 @@
-drush node-export-import --file=../../content/starting-content.import

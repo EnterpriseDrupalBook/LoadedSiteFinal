@@ -1,4 +1,3 @@
-drush dl captcha -y
 drush en captcha image_captcha -y
 
 drush vset captcha_default_validation "1" -y

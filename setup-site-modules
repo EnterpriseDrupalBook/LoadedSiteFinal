@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+drush en services rest_server services_views -y
+drush en views views_ui rules views_rules rules_admin -y
+drush en feeds feeds_ui feeds_import -y
+drush en entityreference field_validation field_validation_ui -y
+drush en node_export node_export_feeds -y
+drush en exclude_node_title -y
