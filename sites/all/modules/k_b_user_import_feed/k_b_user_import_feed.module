@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the K&B User Import Feed feature.
+ */
+
+include_once 'k_b_user_import_feed.features.inc';

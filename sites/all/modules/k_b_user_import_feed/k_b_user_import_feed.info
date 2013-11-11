@@ -1,0 +1,9 @@
+name = K&B User Import Feed
+description = After enabling, go to the import screen and use the customers.csv from /content
+core = 7.x
+package = Features
+features[ctools][] = feeds:feeds_importer_default:1
+features[features_api][] = api:1
+features[feeds_importer][] = customers_import
+features_exclude[dependencies][ctools] = ctools
+features_exclude[dependencies][feeds] = feeds
